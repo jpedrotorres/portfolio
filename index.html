@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang= "pt-br">
+<head>
+	<meta charset= "utf-8">
+	<meta name= "viewport" content= "width=device-width, initial-scale=1.0">
+	<title>João Torres</title>
+
+	<link rel= "icon" href= "img/icon_joaoDev.svg" type= "image/svg">
+	<link rel= "stylesheet" href= "style/style.css">
+
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body onresize= "verificaTam()">
+	<header>
+		<nav>
+			<a href= "#home" class= "logo-header"><img src= "img/logo_joaoDev.svg" alt= "logo site"></a>
+
+			<span class="material-symbols-outlined" id= "icon-burger" onclick= "clickMenu()">menu</span>
+			<ul class= "nav-list" id= "itemsMenu">
+				<li><a href= "#about-me">sobre</a>
+				<li><a href= "#services">serviços</a>
+				<li><a href= "#contact">contato</a>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id= "home">
+			<p id= "hello-world">hello world &#128075;</p>
+			<h1>desenvolvendo sonhos e um pouco de codigos</h1>
+
+			<a href= "#contact" class= "link-button">vamos conversar</a> 
+		</section>
+		<section id= "about-me">
+			<article class= "texto-sobre">
+				<h1>olá, sou o João Torres.</h1>
+				<h2>dev Frontend e UX/UI Designer</h2>
+
+				<p>movido a criar e viver o novo! Possuindo uma formação sólida em HTML5 e CSS3, além do conhecimento aprofundado em UX/UI design, tenho capacidade de entregar interfaces que proporcionam experiências agradáveis, responsivas e acessíveis, sempre mirando o melhor para você.</p>
+
+				<p>atualmente me encontro cursando uma graduação em Sistemas de Informação, pela UniLaSalle-RJ, entretanto, já passei por 2 anos da graduação em Física Computacional (UFF), que acabei abandonando quando entendi que minha paixão e vocação estava nos códigos.</p>
+
+				<p>hoje, além dos conhecimentos em HTML e CSS, tenho domínio sobre as linguagens de programação JavaScript, Python e C, além de uma excelente base em lógica de programação. Dessa forma, tenho capacidade de atuar tanto no backend quanto no frontend.</p>
+			</article>
+
+			<aside id= "linguagens">
+				<h2>habilidades</h2>
+
+				<ul id= "listaHabilidades">
+					<li class= "item-skill"><i class="devicon-python-plain devicon"></i> Python
+					<li class= "item-skill"><i class="devicon-c-plain devicon"></i> C
+					<li class= "item-skill"><i class="devicon-html5-plain devicon"></i> HTML5
+					<li class= "item-skill"><i class="devicon-css3-plain devicon"></i> CSS3
+					<li class= "item-skill"><i class="devicon-javascript-plain devicon"></i> JavaScript
+					<li class= "item-skill"><i class="devicon-git-plain devicon"></i> Git
+					<li class= "item-skill"><i class="devicon-figma-plain devicon"></i> Figma
+					<li class= "item-skill"><i class="devicon-php-plain devicon"></i> PHP
+					<li class= "item-skill"><i class="devicon-bash-plain devicon"></i> Shell Script
+				</ul>				
+			</aside>
+		</section>
+		<section id= "services">
+			<article class= "texto-servicos">
+				<h1>trabalhos</h1>
+
+				<p>aqui estão alguns dos meus trabalhos recentes.</p>
+			</article>
+
+			<section class= "trabalhos">
+				<div class= "trabalho-card">
+					<img src= "img/projetos/naju_310.jpg" alt= "Página principal do projeto Naju Confeitaria">
+					<div class= "informacoes-trabalho">
+						<h2>re. geek</h2>
+
+						<p>design e desenvolvimento de um site de notícias e cusiosidades sobre a cultura pop</p>
+
+						<ul class= "tecnologia-usada">
+							<li class= "item-tech">HTML
+							<li class= "item-tech">CSS
+							<li class= "item-tech">JavaScript
+						</ul>
+					</div>
+				</div>
+				<div class= "trabalho-card">
+					<img src= "img/projetos/naju_310.jpg" alt= "Página principal do projeto Naju Confeitaria">
+					<div class= "informacoes-trabalho">
+						<h2>naju confeitaria</h2>
+
+						<p>elaboração do design para o futuro site da confeitaria, através da plataforma Figma, em conjunto com o Designer Fabiano dos Santos</p>
+
+						<ul class= "tecnologia-usada">
+							<li class= "item-tech">Figma
+						</ul>
+					</div>
+				</div>
+
+				<div class= "trabalho-card">
+					<img src= "img/projetos/naju_310.jpg" alt= "Página principal do projeto Naju Confeitaria">
+					<div class= "informacoes-trabalho">
+						<h2>impressora</h2>
+
+						<p>aplicação web para servidor local Linux, com o intuito de facilitar a impressão de arquivos a distância</p>
+
+						<ul class= "tecnologia-usada">
+							<li class= "item-tech">HTML
+							<li class= "item-tech">CSS
+							<li class= "item-tech">JavaScript
+							<li class= "item-tech">PHP
+							<li class= "item-tech">Shell Script
+						</ul>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section id= "contact">
+			<div class= "mensagem-contato">
+				<p>gostou do que viu? Entre em contato comigo para conversarmos e, quem sabe, fechar um projeto incrível!</p>
+			</div>
+			<div class= "social-contato">
+				<ul>
+					<li><a href= "#" title= "acesse meu instagram" target= "_blank" class= "card-midia"><i class='bx bxl-instagram'></i></a>
+					<li><a href= "#" title= "acesse meu github" target= "_blank" class= "card-midia"><i class='bx bxl-github'></i></a>
+					<li><a href= "#" title= "acesse meu linkedin" target= "_blank" class= "card-midia"><i class='bx bxl-linkedin'></i></a>
+					<li><a href= "#" title= "envie-me um email" target= "_blank" class= "card-midia"><i class='bx bxl-gmail'></i></a>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; Copyright 2024. Desenvolvido por <strong>João Torres</strong>.</p>
+	</footer>
+
+	<script>
+		function verificaTam() {
+			if(window.innerWidth >= 768) {
+				itemsMenu.style.display = "flex"
+			} else {
+				itemsMenu.style.display = "none"
+			}
+		}
+		function clickMenu() {
+			if (itemsMenu.style.display == "block") {
+				itemsMenu.style.display = "none"
+			} else {
+				itemsMenu.style.display = "block"
+			}
+		}
+	</script>
+</body>
+</html>
