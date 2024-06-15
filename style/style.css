@@ -72,7 +72,7 @@ nav {
 
 .nav-list > li > a:hover {
 	color: #fff;
-	transform: scale(1.2);
+	transform: scale(1.1);
 }
 
 .nav-list > li > a {
@@ -267,7 +267,7 @@ nav {
 
 	list-style-type: none;
 
-	max-width: 500px;
+	max-width: 400px;
 	margin: auto;
 }
 
@@ -284,19 +284,19 @@ nav {
 	align-items: center;
 	row-gap: 0.5em;
 
-	font-size: 1.5em;
+	font-size: 1em;
 	font-weight: 500;
 
-	width: 150px;
-	height: 150px;
+	width: 100px;
+	padding: 15px 0;
 	border: 3px solid var(--color1-2);
 	border-radius: 10px;
 
-	transition: border-color .7s, transform .9s;
+	transition: border-color .7s, transform .9s, font-size .6s;
 }
 
 .devicon {
-	font-size: 3em;
+	font-size: 2.5em;
 }
 
 #services {
@@ -414,7 +414,7 @@ nav {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	column-gap: 1em;
+	gap: 1em;
 
 	list-style-type: none;
 }
@@ -442,11 +442,34 @@ nav {
 
 @media screen and (min-width: 768px) {
 	#listaHabilidades {
-		max-width: 600px;
+		max-width: 500px;
+	}
+
+	.item-skill {
+		font-size: 1.2em;
+
+		width: 120px;
+	}
+
+	.devicon {
+		font-size: 2.7em;
 	}
 }
 
 @midia screen and (min-width: 992px) {
+	#listaHabilidades {
+		max-width: 600px;
+	}
+
+	.item-skill {
+		font-size: 1.5em;
+
+		width: 150px;
+	}
+
+	.devicon {
+		font-size: 3em;
+	}
 }
 
 /* Configuração do footer */
@@ -455,4 +478,6 @@ footer {
 	background: var(--color5);
 	color: #fff;
 	text-align: center;
+
+	padding: 5px max(20px, 5vw);
 }
