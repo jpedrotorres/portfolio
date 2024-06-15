@@ -37,6 +37,7 @@ nav {
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
+	gap: 0.3em;
 
 	width: calc(100% - 16vw);
 	padding: 15px 8vw;
@@ -429,11 +430,11 @@ nav {
 	align-items: center;
 
 	color: #fff;
-	font-size: 2em;
+	font-size: 1.5em;
 	text-decoration: none;
 
-	width: 45px;
-	height: 45px;
+	width: 40px;
+	height: 40px;
 	border: 2px solid var(--color1-1);
 	border-radius: 50%;
 
@@ -453,6 +454,13 @@ nav {
 
 	.devicon {
 		font-size: 2.7em;
+	}
+
+	.social-contato > ul a {
+		font-size: 2em;
+
+		width: 45px;
+		height: 45px;
 	}
 }
 
